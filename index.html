@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Web Application</title>
+    <style>
+      /* CSS styles go here */
+      body {
+        background-color: rgb(89, 181, 24);
+      }
+      h1 {
+        color: navy;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to my Sample Web Application</h1>
+    <form>
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name">
+      <button onclick="greet()">Submit</button>
+    </form>
+    <p id="greeting"></p>
+    <script>
+      // JavaScript code goes here
+      function greet() {
+        var name = document.getElementById("name").value;
+        document.getElementById("greeting").innerHTML = "Hello, " + name + "!";
+      }
+    </script>
+  </body>
+</html>
